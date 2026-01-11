@@ -24,16 +24,16 @@ export function Footer() {
     <footer className="bg-card text-card-foreground border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-            <div className="space-y-6">
-              <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-lg font-['Outfit']">A</span>
-                </div>
-                <span className="text-xl font-semibold font-['Outfit']">Adishri Enterprises</span>
+          <div className="space-y-6">
+            <div className="flex items-center gap-2">
+              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-lg font-['Outfit']">A</span>
               </div>
-              <p className="text-muted-foreground text-sm leading-relaxed font-['Outfit']">
-                Leading manufacturer of premium HDPE & LDPE bottles and Jerry cans. Committed to quality and industrial excellence.
-              </p>
+              <span className="text-xl font-semibold font-['Outfit']">AquaBottle</span>
+            </div>
+            <p className="text-muted-foreground text-sm leading-relaxed font-['Outfit']">
+              Leading manufacturer of premium quality bottles since 1995. Committed to innovation, sustainability, and excellence.
+            </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <a
@@ -68,19 +68,19 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-6 font-['Outfit']">Contact Info</h3>
             <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                    <MapPin size={18} className="shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground text-sm font-['Outfit']">
-                      PLOT NO B 33 2 Shendra MIDC Shendra Chh Sambhajinagar Maharashtra 431007
-                    </span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Phone size={18} className="shrink-0" />
-                    <span className="text-muted-foreground text-sm font-['Outfit']">+91 98765 43210</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Mail size={18} className="shrink-0" />
-                    <span className="text-muted-foreground text-sm font-['Outfit']">info@adishrienterprises.com</span>
-                  </li>
+                  <MapPin size={18} className="shrink-0 mt-0.5" />
+                  <span className="text-muted-foreground text-sm font-['Outfit']">
+                    123 Industrial Area, Manufacturing Hub, City - 400001
+                  </span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Phone size={18} className="shrink-0" />
+                  <span className="text-muted-foreground text-sm font-['Outfit']">+91 98765 43210</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Mail size={18} className="shrink-0" />
+                  <span className="text-muted-foreground text-sm font-['Outfit']">info@aquabottle.com</span>
+                </li>
                 <li className="flex items-start gap-3">
                   <Clock size={18} className="shrink-0 mt-0.5" />
                   <span className="text-muted-foreground text-sm font-['Outfit']">
@@ -112,9 +112,9 @@ export function Footer() {
       <div className="border-t border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                <p className="text-muted-foreground text-sm font-['Outfit']">
-                  © {new Date().getFullYear()} Adishri Enterprises. All rights reserved.
-                </p>
+              <p className="text-muted-foreground text-sm font-['Outfit']">
+                © {new Date().getFullYear()} AquaBottle Co. All rights reserved.
+              </p>
               <div className="flex gap-6">
                 <Link href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors font-['Outfit']">
                   Privacy Policy
