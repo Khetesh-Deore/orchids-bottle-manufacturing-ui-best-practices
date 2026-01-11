@@ -5,8 +5,8 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "AquaBottle Co. | Premium Bottle Manufacturing",
-  description: "Leading manufacturer of high-quality bottles. Explore our range of premium glass and plastic bottles for beverages, pharmaceuticals, and cosmetics.",
+  title: "Adishri Enterprises | Industrial HDPE & LDPE Bottle Manufacturing",
+  description: "Leading manufacturer of high-quality HDPE & LDPE bottles and Jerry cans (200ml to 5L). Serving pharmaceutical, chemical, and industrial sectors from Sambhajinagar.",
 };
 
 export default function RootLayout({

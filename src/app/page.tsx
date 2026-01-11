@@ -11,52 +11,52 @@ import { useState, useRef } from "react";
 
 const products = [
   {
-    name: "Classic 500ml",
-    capacity: "500ml",
-    category: "Beverage",
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=500&fit=crop",
-    dimensions: "H: 210mm | D: 65mm",
-    features: ["BPA Free", "Recyclable", "Food Grade"]
+    name: "Industrial Jerry Cans",
+    capacity: "200ml - 5L",
+    category: "HDPE",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fca90869-251f-4718-847b-a565b2d5fa65/WhatsApp-Image-2026-01-11-at-10.00.55-AM-1-1768107433594.jpeg",
+    dimensions: "Custom Sizes Available",
+    features: ["Heavy Duty", "Stackable", "Chemical Resistant"]
   },
   {
-    name: "Premium 1L",
-    capacity: "1 Liter",
-    category: "Beverage",
-    image: "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400&h=500&fit=crop",
-    dimensions: "H: 280mm | D: 75mm",
-    features: ["Crystal Clear", "UV Protected", "Leak Proof"]
+    name: "HDPE Bottle Range",
+    capacity: "15ml - 1L",
+    category: "HDPE",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fca90869-251f-4718-847b-a565b2d5fa65/WhatsApp-Image-2026-01-11-at-10.00.56-AM-2-1768107404608.jpeg",
+    dimensions: "Standard Neck Sizes",
+    features: ["Durable", "Leak Proof", "Multi-purpose"]
   },
   {
-    name: "Pharma 200ml",
-    capacity: "200ml",
-    category: "Pharmaceutical",
-    image: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=400&h=500&fit=crop",
-    dimensions: "H: 140mm | D: 55mm",
-    features: ["Amber Glass", "Child Safe", "Tamper Evident"]
+    name: "Pharmaceutical Vials",
+    capacity: "200ml - 500ml",
+    category: "LDPE/HDPE",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fca90869-251f-4718-847b-a565b2d5fa65/WhatsApp-Image-2026-01-11-at-10.00.56-AM-3-1768107391870.jpeg",
+    dimensions: "Precision Molding",
+    features: ["Food Grade", "Tamper Evident", "Recyclable"]
   },
   {
-    name: "Cosmetic 100ml",
-    capacity: "100ml",
-    category: "Cosmetics",
-    image: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400&h=500&fit=crop",
-    dimensions: "H: 120mm | D: 45mm",
-    features: ["Frosted Finish", "Pump Ready", "Luxury Feel"]
+    name: "Clear Pump Bottles",
+    capacity: "200ml - 1L",
+    category: "PET/LDPE",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fca90869-251f-4718-847b-a565b2d5fa65/WhatsApp-Image-2026-01-11-at-10.00.56-AM-1768107421406.jpeg",
+    dimensions: "H: 210mm - 280mm",
+    features: ["Crystal Clear", "Pump Compatible", "Elegant Design"]
   },
   {
-    name: "Sport 750ml",
-    capacity: "750ml",
-    category: "Sports",
-    image: "https://images.unsplash.com/photo-1553531580-652231b0df8b?w=400&h=500&fit=crop",
-    dimensions: "H: 250mm | D: 70mm",
-    features: ["Squeeze Friendly", "Spill Proof", "Ergonomic"]
+    name: "Chemical Storage Bottles",
+    capacity: "500ml - 2L",
+    category: "HDPE",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fca90869-251f-4718-847b-a565b2d5fa65/WhatsApp-Image-2026-01-11-at-10.00.56-AM-1-1768107413266.jpeg",
+    dimensions: "Wide Mouth Options",
+    features: ["UV Protected", "Robust Build", "Industrial Grade"]
   },
   {
-    name: "Mini 250ml",
-    capacity: "250ml",
-    category: "Beverage",
-    image: "https://images.unsplash.com/photo-1560023907-5f339617ea30?w=400&h=500&fit=crop",
-    dimensions: "H: 155mm | D: 55mm",
-    features: ["Travel Size", "Lightweight", "Stackable"]
+    name: "Premium Jerry Can",
+    capacity: "5 Liter",
+    category: "HDPE",
+    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fca90869-251f-4718-847b-a565b2d5fa65/WhatsApp-Image-2026-01-11-at-10.00.54-AM-1768107480788.jpeg",
+    dimensions: "High Capacity",
+    features: ["Easy Pour", "Heavy Duty", "Stackable"]
   },
 ];
 
@@ -68,10 +68,10 @@ const values = [
 ];
 
 const stats = [
-  { value: "25+", label: "Years Experience" },
-  { value: "500+", label: "Happy Clients" },
-  { value: "50M+", label: "Bottles Produced" },
-  { value: "99.9%", label: "Quality Rate" },
+  { value: "15+", label: "Years Experience" },
+  { value: "300+", label: "Happy Clients" },
+  { value: "10M+", label: "Containers Produced" },
+  { value: "100%", label: "Quality Commitment" },
 ];
 
 export default function Home() {
@@ -109,17 +109,17 @@ export default function Home() {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
                 <Sparkles size={16} className="text-primary" />
-                <span className="text-sm font-medium text-primary font-['Outfit']">Premium Quality Since 1995</span>
+                <span className="text-sm font-medium text-primary font-['Outfit']">Excellence in Plastic Manufacturing</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight font-['Outfit']">
-                Crafting Perfect
-                <span className="block text-primary">Bottles</span>
-                <span className="block text-3xl sm:text-4xl lg:text-5xl font-medium text-muted-foreground mt-2">For Every Purpose</span>
+                Precision HDPE &
+                <span className="block text-primary">LDPE Bottles</span>
+                <span className="block text-3xl sm:text-4xl lg:text-5xl font-medium text-muted-foreground mt-2">200ml to 5L Capacity</span>
               </h1>
               
               <p className="text-lg text-muted-foreground max-w-xl leading-relaxed font-['Outfit']">
-                Industry-leading manufacturer of premium glass and plastic bottles. From beverages to pharmaceuticals, we deliver excellence in every container.
+                Adishri Enterprises specializes in high-quality Jerry cans and industrial bottles. Durability and precision in every container we manufacture.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -149,7 +149,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl transform rotate-6" />
                 <div className="absolute inset-0 bg-card rounded-3xl shadow-2xl overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=600&fit=crop"
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fca90869-251f-4718-847b-a565b2d5fa65/WhatsApp-Image-2026-01-11-at-10.00.56-AM-2-1768107404608.jpeg"
                     alt="Premium bottles showcase"
                     fill
                     className="object-cover"
@@ -219,22 +219,22 @@ export default function Home() {
               <div>
                 <p className="text-primary font-semibold text-sm tracking-wider uppercase mb-2 font-['Outfit']">About Us</p>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground font-['Outfit']">
-                  Pioneering Excellence in Bottle Manufacturing
+                  Excellence in Industrial Packaging
                 </h2>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed font-['Outfit']">
-                Founded in 1995, AquaBottle Co. has grown from a small family business to one of the region&apos;s most trusted bottle manufacturers. Our journey of over 25 years has been marked by continuous innovation and an unwavering commitment to quality.
+                Adishri Enterprises is a premier manufacturer of HDPE & LDPE bottles and Jerry cans, serving diverse industrial needs with precision and quality. With over 15 years of expertise, we provide robust packaging solutions ranging from 200ml to 5L.
               </p>
 
               <p className="text-muted-foreground leading-relaxed font-['Outfit']">
-                We specialize in producing high-quality glass and plastic bottles for diverse industries including beverages, pharmaceuticals, cosmetics, and food packaging. Our state-of-the-art facility houses advanced machinery capable of producing millions of bottles monthly while maintaining the highest quality standards.
+                Our state-of-the-art manufacturing facility in Shendra MIDC, Sambhajinagar, is equipped with advanced blow-molding machinery. We are dedicated to delivering containers that ensure safety, durability, and chemical resistance for various sectors including pharmaceuticals, chemicals, and consumer goods.
               </p>
 
               <div className="bg-secondary rounded-2xl p-6">
                 <p className="text-lg font-semibold text-foreground mb-2 font-['Outfit']">Our Mission</p>
                 <p className="text-muted-foreground italic font-['Crimson_Pro'] text-lg">
-                  &ldquo;To deliver innovative packaging solutions that protect, preserve, and present our clients&apos; products while maintaining sustainable practices for a better tomorrow.&rdquo;
+                  &ldquo;To provide high-quality, reliable, and sustainable industrial packaging solutions that exceed customer expectations through innovation and manufacturing excellence.&rdquo;
                 </p>
               </div>
 
@@ -351,12 +351,12 @@ export default function Home() {
               <div>
                 <p className="text-primary font-semibold text-sm tracking-wider uppercase mb-2 font-['Outfit']">Our Vision</p>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-['Outfit']">
-                  Shaping the Future of Sustainable Packaging
+                  Setting Standards in Quality Packaging
                 </h2>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed font-['Outfit']">
-                We envision a world where packaging solutions harmonize with environmental responsibility. Our goal is to become the global benchmark for sustainable, innovative, and high-quality bottle manufacturing.
+                We aim to be the most trusted partner for industrial packaging solutions, known for our technical expertise, quality consistency, and customer-centric approach.
               </p>
 
               <div className="space-y-6">
@@ -365,9 +365,9 @@ export default function Home() {
                     <Target size={24} className="text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 font-['Outfit']">2030 Goals</h3>
+                    <h3 className="text-xl font-semibold mb-2 font-['Outfit']">Strategic Growth</h3>
                     <p className="text-muted-foreground font-['Outfit']">
-                      100% recyclable products, carbon-neutral operations, and zero waste manufacturing by 2030.
+                      Expanding our production capacity to meet the growing demands of the industrial sector.
                     </p>
                   </div>
                 </div>
@@ -377,9 +377,9 @@ export default function Home() {
                     <Eye size={24} className="text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 font-['Outfit']">Innovation Focus</h3>
+                    <h3 className="text-xl font-semibold mb-2 font-['Outfit']">Quality Focus</h3>
                     <p className="text-muted-foreground font-['Outfit']">
-                      Investing in R&D for biodegradable materials and smart packaging technologies.
+                      Implementing advanced testing protocols to ensure zero-defect manufacturing.
                     </p>
                   </div>
                 </div>
@@ -389,9 +389,9 @@ export default function Home() {
                     <Users size={24} className="text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 font-['Outfit']">Global Expansion</h3>
+                    <h3 className="text-xl font-semibold mb-2 font-['Outfit']">Customer Success</h3>
                     <p className="text-muted-foreground font-['Outfit']">
-                      Expanding our footprint to serve clients across 50+ countries by 2028.
+                      Building long-term relationships by providing customized packaging solutions.
                     </p>
                   </div>
                 </div>
@@ -401,15 +401,15 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-[4/3] relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&h=600&fit=crop"
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fca90869-251f-4718-847b-a565b2d5fa65/WhatsApp-Image-2026-01-11-at-10.00.56-AM-1-1768107413266.jpeg"
                   alt="Sustainable future vision"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
-                  <p className="text-2xl font-bold font-['Outfit']">Building Tomorrow, Today</p>
-                  <p className="text-muted-foreground font-['Outfit']">Sustainability at the core of everything we do</p>
+                  <p className="text-2xl font-bold font-['Outfit']">Precision Engineering</p>
+                  <p className="text-muted-foreground font-['Outfit']">Quality at the core of everything we do</p>
                 </div>
               </div>
             </div>
@@ -417,44 +417,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-32 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-primary font-semibold text-sm tracking-wider uppercase mb-2 font-['Outfit']">Company History</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground font-['Outfit']">Our Journey Through Time</h2>
-          </div>
-
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-border hidden md:block" />
-            
-            <div className="space-y-12">
-              {[
-                { year: "1995", title: "Foundation", description: "Started as a small family business with a single production line." },
-                { year: "2005", title: "First Expansion", description: "Opened second manufacturing unit, increased capacity by 300%." },
-                { year: "2012", title: "ISO Certification", description: "Achieved ISO 9001:2008 certification for quality management." },
-                { year: "2018", title: "Sustainability Initiative", description: "Launched eco-friendly product line with 100% recyclable materials." },
-                { year: "2024", title: "Industry Leader", description: "Serving 500+ clients across 30 countries with cutting-edge facilities." },
-              ].map((milestone, index) => (
-                <div key={milestone.year} className={`flex flex-col md:flex-row items-center gap-8 ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
-                  <div className="w-full md:w-5/12">
-                    <Card className={`border-0 bg-card shadow-md hover:shadow-lg transition-shadow ${index % 2 === 1 ? "md:text-right" : ""}`}>
-                      <CardContent className="p-6">
-                        <span className="text-3xl font-bold text-primary font-['Outfit']">{milestone.year}</span>
-                        <h3 className="text-xl font-semibold text-foreground mt-2 mb-2 font-['Outfit']">{milestone.title}</h3>
-                        <p className="text-muted-foreground font-['Outfit']">{milestone.description}</p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                  <div className="hidden md:flex w-2/12 justify-center">
-                    <div className="w-4 h-4 bg-primary rounded-full border-4 border-background shadow" />
-                  </div>
-                  <div className="hidden md:block w-5/12" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       <section id="contact" className="py-20 lg:py-32 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -545,12 +508,12 @@ export default function Home() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <p className="text-sm text-muted-foreground font-['Outfit']">Address</p>
-                      <p className="font-medium text-foreground font-['Outfit']">123 Industrial Area, Manufacturing Hub</p>
+                      <p className="font-medium text-foreground font-['Outfit']">PLOT NO B 33 2 Shendra MIDC Shendra Chh Sambhajinagar Maharashtra 431007</p>
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground font-['Outfit']">Contact</p>
                       <p className="font-medium text-foreground font-['Outfit']">+91 98765 43210</p>
-                      <p className="font-medium text-primary font-['Outfit']">info@aquabottle.com</p>
+                      <p className="font-medium text-primary font-['Outfit']">info@adishrienterprises.com</p>
                     </div>
                   </div>
                 </CardContent>
